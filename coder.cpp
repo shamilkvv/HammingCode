@@ -106,17 +106,3 @@ int decode1(short c)
     return H;
 }
 
-int main() {
-    char sym;
-    std::cin >> sym;
-
-    int encodedSym = Encode1(sym);
-
-    std::cout << "Encoded: " << std::bitset<16>(encodedSym) << std::endl;
-
-    int decodedSym = decode1(encodedSym);
-
-    std::cout << "Decoded: " << decodedSym << std::endl;
-
-    return 0;
-}
